@@ -1,5 +1,5 @@
 export {};
-const API_KEY: string = process.env.API_KEY || "";
+const API_KEY: string = "";
 
 const cityInput = document.querySelector<HTMLInputElement>("#cityInput");
 const searchBtn = document.querySelector<HTMLButtonElement>("#searchBtn");
