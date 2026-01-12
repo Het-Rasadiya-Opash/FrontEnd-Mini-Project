@@ -34,7 +34,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var API_KEY = "f91d1a6e5c9498e2e6f34603336c6e7e";
+var API_KEY = "";
 var cityInput = document.querySelector("#cityInput");
 var searchBtn = document.querySelector("#searchBtn");
 var weatherInfo = document.querySelector("#weatherInfo");

@@ -1,5 +1,5 @@
-export {};
-const API_KEY: string = "f91d1a6e5c9498e2e6f34603336c6e7e";
+
+const API_KEY: string = "";
 
 const cityInput = document.querySelector<HTMLInputElement>("#cityInput");
 const searchBtn = document.querySelector<HTMLButtonElement>("#searchBtn");
