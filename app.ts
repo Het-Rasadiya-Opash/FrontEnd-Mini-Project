@@ -1,5 +1,5 @@
 export {};
-const API_KEY: string = "";
+const API_KEY: string = "f91d1a6e5c9498e2e6f34603336c6e7e";
 
 const cityInput = document.querySelector<HTMLInputElement>("#cityInput");
 const searchBtn = document.querySelector<HTMLButtonElement>("#searchBtn");
@@ -73,6 +73,8 @@ async function fetchWeather(city: string): Promise<void> {
 
 function displayWeather(data: WeatherResponse): void {
   if (
+    !cityInput ||
+    !searchBtn ||
     !weatherInfo ||
     !cityName ||
     !temperature ||
@@ -90,7 +92,6 @@ function displayWeather(data: WeatherResponse): void {
   humidity.textContent = `💧 Humidity: ${data.main.humidity}%`;
   wind.textContent = `🌬 Wind Speed: ${data.wind.speed} m/s`;
 
-  const iconCode = data.weather[0].icon;
-
+  const iconCode = data.weather[0]!.icon;
   weatherIcon.src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
 }
